@@ -60,9 +60,9 @@ function App() {
         <header className="masthead">
             <div className="container">
              
-                <div className="masthead-subheading">It's Nice To Meet You</div>
-                <div className="masthead-heading text-uppercase">It's Nice To Meet You</div>
-                <a className="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
+                <div className="masthead-subheading">Hayallerinizi Kodluyorum.</div>
+                <div className="masthead-heading text-uppercase"></div>
+                <a className="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="https://armut.com/hizmetveren/veli-alan-eskisehir-odunpazari-mobil-uygulama-gelistirme_3405051">Teklif Al</a>
             </div>
         </header>
         <section className="page-section" id="services">
