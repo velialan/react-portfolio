@@ -7,6 +7,27 @@ import Portfolio from './components/Portfolio'
 function App() {
 
 
+    const url = 'https://data-live.flightradar24.com/zones/fcgi/feed.js?faa=1&mlat=1&flarm=1&adsb=1&gnd=1&air=1&vehicles=1&estimated=1&gliders=1&stats=1&maxage=14400&airline=!THY&_=1610097546211';
+
+
+    let headers = new Headers();
+  
+    headers.append('Content-Type', 'application/json');
+    headers.append('Accept', 'application/json');
+  
+    headers.append('Access-Control-Allow-Origin', '*');
+    headers.append('Access-Control-Allow-Credentials', 'true');
+  
+  
+    const tiklandi = async () => {
+      await fetch(url, {
+      
+        headers: headers,
+      })
+        .then(response => response.json())
+        .then(data => console.log(data));
+    }
+
   const portfolioLinks = [
     {
       title: 'Threads',
@@ -58,6 +79,7 @@ function App() {
             </div>
         </nav>
         <header className="masthead">
+            <button onClick={tiklandi}>tıkla</button>
             <div className="container">
              
                 <div className="masthead-subheading">Hayallerinizi Kodluyorum.</div>
