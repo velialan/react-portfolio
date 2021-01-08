@@ -21,7 +21,7 @@ function App() {
   
     const tiklandi = async () => {
       await fetch(url, {
-      
+      mode:'no-cors',
         headers: headers,
       })
         .then(response => response.json())
